@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.room{
+    width: 600px;
+    height: 400px;
+    background-color: #e6e6e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lamp{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    border-radius: 50%;
+    animation: lampAnimation 4s infinite;
+    
+}
+@keyframes lampAnimation {
+    0%{
+        background-color: #ffff99;
+    }
+    50%{
+        background-color: #ff9966;
+    }
+    100%{
+        background-color: #66ccff;
+    }
+}
+.table{
+    width: 200px;
+    height: 100px;
+    background-color: rgb(148, 83, 29);
+    position: absolute;
+    bottom: 210px;
+    right: 70px;
+    transition: transform 3s linear;
+}
+.table:hover{
+    transform: translateX(-250px);
+}
+.frame{
+    width: 60px;
+    height: 200px;
+    background-color: rgb(55, 29, 148);
+    position: absolute;
+    top: 10px;
+    left: 0px;
+}
